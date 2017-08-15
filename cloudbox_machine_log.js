@@ -59,7 +59,7 @@ function scanPort(callback) {
 			// console.log(port.comName);
 			// console.log(port.pnpId);
 			// console.log(port.manufacturer);
-			if (port.manufacturer == 'FTDI') {
+			if (port.manufacturer == 'FTDI' || port.manufacturer=='Prolific_Technology_Inc.') {
 				PortName = port.comName;
 			}
 		});
